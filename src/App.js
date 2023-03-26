@@ -10,8 +10,8 @@ function App() {
   const handleSearch = (searchQuery) => {
     console.log("Performing search for query:", searchQuery);
   };
-  const [selectedGenre, setSelectedGenre] = useState('action');
-  const genres = ['action', 'comedy', 'drama', 'horror'];
+  const [selectedGenre, setSelectedGenre] = useState('all');
+  const genres = ['all', 'documentary', 'comedy', 'horror', 'crime'];
 
   const handleGenreSelect = genre => {
     setSelectedGenre(genre);

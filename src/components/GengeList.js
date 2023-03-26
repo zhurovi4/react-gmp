@@ -1,17 +1,17 @@
 import React from 'react';
 
 const GenreList = ({ genres, selectedGenre, onSelect }) => (
-  <div>
+  <ul className='genresList'>
     {genres.map(genre => (
-      <button
+      <li
         key={genre}
-        style={{ fontWeight: genre === selectedGenre ? 'bold' : 'normal' }}
+        className={`genre-button ${genre === selectedGenre ? 'selected' : ''}`}
         onClick={() => onSelect(genre)}
       >
         {genre}
-      </button>
+      </li>
     ))}
-  </div>
+  </ul>
 );
 
 export default GenreList;
