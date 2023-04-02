@@ -11,3 +11,73 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.searchForm {
+  display: flex;
+  gap: 12px;
+}
+
+.searchInput {
+  flex-grow: 1;
+  padding: 0 19px;
+  border: none;
+  border-radius: 4px;
+  font-family: "Montserrat", sans-serif;
+  height: 57px;
+  line-height: 57px;
+  font-size: 18px;
+  background: rgba(66, 66, 66, 0.9);
+  color: #fff;
+}
+
+.searchButton {
+  height: 57px;
+  min-width: 233px;
+  border: none;
+  border-radius: 4px;
+  background: #F65261;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 20px;
+}
+
+.genresList {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.genresList li {
+  flex-grow: 1;
+  padding: 19px 0;
+  text-transform: uppercase;
+  position: relative;
+  cursor: pointer;
+}
+
+
+.genresList li::after {
+  content: "";
+  background: #F65261
+  ;
+  height: 4px;
+  position: absolute;
+  bottom: 0;
+  transition: .16s all 0.025s;
+}
+
+.genresList li::after {
+  left: 100%;
+  right: 0;
+}
+
+.genresList .selected ~ li::after {
+  left: 0;
+  right: 100%;
+}
+
+.genresList .selected::after {
+  left: 0;
+  right: 0;
+}
