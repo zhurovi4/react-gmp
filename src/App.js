@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import logo from './logo.svg';
 import Counter from './components/Counter';
 import SearchForm from './components/SearchForm';
 import GenreList from './components/GengeList';
