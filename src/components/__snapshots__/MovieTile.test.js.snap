@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MovieTile component matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="movieTile"
+  >
+    <img
+      alt="Bohemian Rhapsody"
+      src="https://m.media-amazon.com/images/M/MV5BNDg2NjIxMDUyNF5BMl5BanBnXkFtZTgwMzEzNTE1NTM@._V1_FMjpg_UY508_.jpg"
+    />
+    <div
+      class="movie-details"
+    >
+      <div>
+        <div
+          class="movie-title"
+        >
+          Bohemian Rhapsody
+        </div>
+        <div
+          class="movie-genres"
+        >
+          Biography, Drama, Music
+        </div>
+      </div>
+      <div
+        class="movie-year"
+      >
+        2021
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

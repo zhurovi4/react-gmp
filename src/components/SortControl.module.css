@@ -1,0 +1,24 @@
+.sortControl {
+  color: #fff;
+}
+
+.sortControl label {
+  margin-right: 30px;
+  opacity: 0.5;
+}
+
+.sortControl select {
+  width: 150px;
+  height: 20px;
+  font-size: 16px;
+  color: #fff;
+  text-transform: uppercase;
+  background: transparent;
+  border: none;
+  appearance: none;
+}
+
+select option {
+  background: #232323;
+  color: #fff;
+}

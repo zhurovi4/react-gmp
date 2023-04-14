@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MovieDetails component matches snapshot 1`] = `
+<div>
+  <div
+    class="movieInfo"
+  >
+    <img
+      alt="A Good movie"
+      class="moviePoster"
+      src="https://m.media-amazon.com/images/M/MV5BZmExNmEwYWItYmQzOS00YjA5LTk2MjktZjEyZDE1Y2QxNjA1XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_QL75_UX285_CR0,2,285,422_.jpg"
+    />
+    <div>
+      <div
+        class="movieTitle"
+      >
+        <h2>
+          A Good movie
+        </h2>
+        <span
+          class="movieRating"
+        >
+          4.5
+        </span>
+      </div>
+      <div
+        class="movieGenre"
+      >
+        Action, Comedy
+      </div>
+      <div
+        class="movieDate"
+      >
+        <div>
+          2023
+        </div>
+        <div>
+          1h 30m
+        </div>
+      </div>
+      <div
+        class="movieDescription"
+      >
+        This is an example movie.
+      </div>
+    </div>
+  </div>
+</div>
+`;

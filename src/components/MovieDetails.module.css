@@ -1,0 +1,59 @@
+.movieInfo {
+    display: flex;
+    gap: 58px;
+    text-align: left;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+}
+
+.moviePoster {
+    max-width: 323px;
+}
+
+.movieTitle {
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    text-transform: uppercase;
+
+}
+
+.movieRating {
+    display: flex;
+    flex-basis: 60px;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25px;
+    font-size: 20px;
+    border: 1px solid #fff;
+    height: 60px;
+    border-radius: 50%;
+
+}
+
+.movieTitle h2 {
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+.movieGenre {
+    margin-bottom: 30px;
+    font-size: 14px;
+    opacity: 0.5;
+}
+
+.movieDate {
+    display: flex;
+    margin-bottom: 30px;
+    color: #F65261;
+    gap: 51px;
+    font-size: 24px;
+}
+
+.movieDescription {
+    font-size: 20px;
+    opacity: 0.5;
+}

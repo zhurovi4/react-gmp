@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SortControl matches snapshot 1`] = `
+<div>
+  <div
+    class="sortControl"
+  >
+    <label
+      for="sort-control"
+    >
+      Sort by:
+    </label>
+    <select
+      id="sort-control"
+    >
+      <option
+        value="release-date"
+      >
+        Release Date
+      </option>
+      <option
+        value="title"
+      >
+        Title
+      </option>
+    </select>
+  </div>
+</div>
+`;
