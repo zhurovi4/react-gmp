@@ -1,9 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import FocusTrap from "focus-trap-react";
-import Portal from "react-portal";
+import { Portal } from "react-portal";
+import styles from "./Dialog.module.css";
 
-const Dialog = ({ isOpen, onClose, children }) => {
+const Dialog = ({ isOpen, onClose, children, title }) => {
   const dialogNode = document.createElement("div");
 
   const handleClose = () => {
@@ -16,9 +17,10 @@ const Dialog = ({ isOpen, onClose, children }) => {
   return (
     <Portal isOpened={isOpen}>
       <FocusTrap active={isOpen}>
-        <div className="dialog-overlay">
-          <div className="dialog">
-            <button className="dialog-close" onClick={handleClose}>
+        <div className={styles["dialog-overlay"]}>
+          <div className={styles.dialog}>
+            <h2>{title}</h2>
+            <button className={styles["dialog-close"]} onClick={handleClose}>
               ×
             </button>
             {children}

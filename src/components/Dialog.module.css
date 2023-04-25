@@ -1,0 +1,47 @@
+.dialog-overlay {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dialog {
+  position: relative;
+  width: 80vw;
+  height: 80vw;
+  max-height: 517px;
+  background: #232323;
+}
+
+
+.dialog-close {
+  background: none;
+  border: none;
+  position: absolute;
+  right: 32px;
+  top: 22px;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+.dialog-close:before,
+.dialog-close:after {
+  position: absolute;
+  left: 15px;
+  content: " ";
+  height: 28px;
+  width: 2px;
+  background-color: #fff;
+}
+.dialog-close:before {
+  transform: rotate(45deg);
+}
+.dialog-close:after {
+  transform: rotate(-45deg);
+}
