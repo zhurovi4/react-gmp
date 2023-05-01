@@ -20,9 +20,10 @@ const Dialog = ({ isOpen, onClose, children, title }) => {
         <div className={styles["dialog-overlay"]}>
           <div className={styles.dialog}>
             <h2>{title}</h2>
-            <button className={styles["dialog-close"]} onClick={handleClose}>
-              ×
-            </button>
+            <button
+              className={styles["dialog-close"]}
+              onClick={handleClose}
+            ></button>
             {children}
           </div>
         </div>
