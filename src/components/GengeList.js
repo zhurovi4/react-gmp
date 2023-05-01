@@ -1,4 +1,5 @@
 import React from 'react';
+import './GenreList.css';
 
 const GenreList = ({ genres, selectedGenre, onSelect }) => (
   <ul className='genresList'>
