@@ -1,0 +1,86 @@
+.movieForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.movieForm label {
+  color: #f65261;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.movieForm label:first-child {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 63%;
+}
+
+.movieForm label:last-child {
+  flex-grow: 1;
+}
+
+.formRow {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.movieForm input {
+  display: block;
+  box-sizing: border-box;
+  margin: 13px 0 0 0;
+  padding: 0 18px;
+  width: 100%;
+  border: none;
+  background: #323232f2;
+  height: 57px;
+  color: #fff;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+textarea {
+  width: 100%;
+  padding: 18px;
+  background: #323232f2;
+  color: #fff;
+  font-size: 20px;
+  line-height: 24px;
+  border: 0;
+  font-family: "Montserrat";
+}
+
+textarea::placeholder {
+  font-family: "Montserrat";
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+  opacity: 0.3;
+}
+
+.buttonsRow {
+    display: flex;
+    gap: 13px;
+    justify-content: flex-end;
+}
+
+.movieForm button {
+    border: 1px solid #F65261;
+    height: 57px;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    min-width: 180px;
+    border-radius: 4px;
+}
+
+.resetBtn {
+    background: transparent;
+    color: #F65261;
+}
+
+.submitBtn {
+    background: #F65261;
+    color: #fff;
+}

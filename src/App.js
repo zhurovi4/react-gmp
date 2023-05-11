@@ -4,6 +4,7 @@ import SearchForm from "./components/SearchForm";
 import GenreList from "./components/GengeList";
 import MovieTile from "./components/MovieTile";
 import MovieDetails from "./components/MovieDetails";
+import MovieForm from "./components/MovieForm"
 import SortControl from "./components/SortControl";
 
 
@@ -15,6 +16,7 @@ function App() {
   };
   const [selectedGenre, setSelectedGenre] = useState("all");
   const genres = ["all", "documentary", "comedy", "horror", "crime"];
+
 
   const movie = {
     id: 1,
@@ -56,6 +58,7 @@ function App() {
       />
       <SortControl defaultSelection="release-date" />
       <MovieTile movie={movie} onClick={() => console.log(movie)} />
+      <MovieForm onSubmit={() => console.log('movie added')} />
     </div>
   );
 }
