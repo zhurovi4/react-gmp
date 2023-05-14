@@ -1,12 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import styles from "./SortControl.module.css";
 
-const SortControl = ({ defaultSelection }) => {
-  const [currentSelection, setCurrentSelection] = useState(defaultSelection);
+const SortControl = ({ defaultSelection, onSortingCriterionChange  }) => {
 
   const handleSelectionChange = (event) => {
-    const newValue = event.target.value;
-    setCurrentSelection(newValue);
+    const selectedCriterion = event.target.value;
+    onSortingCriterionChange(selectedCriterion);
   };
 
   return (
@@ -14,7 +13,7 @@ const SortControl = ({ defaultSelection }) => {
       <label htmlFor="sort-control">Sort by:</label>
       <select
         id="sort-control"
-        value={currentSelection}
+        value={defaultSelection}
         onChange={handleSelectionChange}
       >
         <option value="release-date">Release Date</option>

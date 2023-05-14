@@ -4,9 +4,9 @@ import MovieTile from "./MovieTile";
 
 describe("MovieTile component", () => {
   const movie = {
-    imageUrl: "https://m.media-amazon.com/images/M/MV5BNDg2NjIxMDUyNF5BMl5BanBnXkFtZTgwMzEzNTE1NTM@._V1_FMjpg_UY508_.jpg",
-    name: "Bohemian Rhapsody",
-    releaseYear: 2021,
+    poster_path: "https://m.media-amazon.com/images/M/MV5BNDg2NjIxMDUyNF5BMl5BanBnXkFtZTgwMzEzNTE1NTM@._V1_FMjpg_UY508_.jpg",
+    title: "Bohemian Rhapsody",
+    release_date: '2021-11-11',
     genres: ["Biography", "Drama", "Music"],
   };
   const onClick = jest.fn();
@@ -18,8 +18,7 @@ describe("MovieTile component", () => {
 
   it("renders movie details", () => {
     render(<MovieTile movie={movie} onClick={onClick} />);
-    expect(screen.getByText(movie.name)).toBeInTheDocument();
-    expect(screen.getByText(`${movie.releaseYear}`)).toBeInTheDocument();
+    expect(screen.getByText(movie.title)).toBeInTheDocument();
     expect(screen.getByText(`${movie.genres.join(", ")}`)).toBeInTheDocument();
   });
 

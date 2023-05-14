@@ -1,6 +1,10 @@
 .movieTile {
-  width: 324px;
+  flex: 0 0 33%;
+  box-sizing: border-box;
+  padding: 30px;
+  max-width: 33%;
   font-family: "Montserrat", sans-serif;
+  cursor: pointer;
 }
 
 img {

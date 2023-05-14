@@ -3,11 +3,13 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
+    color: #fff;
   }
   
   .genresList li {
     flex-grow: 1;
-    padding: 19px 0;
+    text-align: center;
+    padding: 19px 15px;
     text-transform: uppercase;
     position: relative;
     cursor: pointer;

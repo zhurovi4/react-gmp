@@ -41,10 +41,10 @@ function MovieForm({ initialMovieInfo = {}, onSubmit }) {
           Rating:
           <input
             type="number"
-            name="rating"
+            name="vote_average"
             min="0"
             max="10"
-            defaultValue={initialMovieInfo.rating}
+            defaultValue={initialMovieInfo.vote_average}
           />
         </label>
       </div>
@@ -68,11 +68,11 @@ function MovieForm({ initialMovieInfo = {}, onSubmit }) {
       </div>
       <div className={styles.formRow}>
         <textarea
-          placeholder="Movie description"
-          id="movie-description"
+          placeholder="Movie overview"
+          id="movie-overview"
           cols="100"
           rows="10"
-          defaultValue={initialMovieInfo.description}
+          defaultValue={initialMovieInfo.overview}
         ></textarea>
       </div>
       <div className={styles.buttonsRow}>

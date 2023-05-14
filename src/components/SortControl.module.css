@@ -5,6 +5,7 @@
 .sortControl label {
   margin-right: 30px;
   opacity: 0.5;
+  text-transform: uppercase;
 }
 
 .sortControl select {

@@ -4,23 +4,23 @@ import MovieDetails from "./MovieDetails";
 
 describe("MovieDetails component", () => {
   const movie = {
-    imageUrl: "https://m.media-amazon.com/images/M/MV5BZmExNmEwYWItYmQzOS00YjA5LTk2MjktZjEyZDE1Y2QxNjA1XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_QL75_UX285_CR0,2,285,422_.jpg",
-    name: "A Good movie",
-    rating: 4.5,
+    poster_path: "https://m.media-amazon.com/images/M/MV5BZmExNmEwYWItYmQzOS00YjA5LTk2MjktZjEyZDE1Y2QxNjA1XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_QL75_UX285_CR0,2,285,422_.jpg",
+    title: "A Good movie",
+    vote_average: 4.5,
     duration: "1h 30m",
-    description: "This is an example movie.",
-    releaseYear: 2023,
+    overview: "This is an example movie.",
+    release_date: '2004-11-11',
     genres: ["Action", "Comedy"],
   };
 
   it("renders movie details", () => {
     render(<MovieDetails movie={movie} />);
-    expect(screen.getByAltText(movie.name)).toBeInTheDocument();
-    expect(screen.getByText(movie.name)).toBeInTheDocument();
-    expect(screen.getByText(movie.rating.toString())).toBeInTheDocument();
+    expect(screen.getByAltText(movie.title)).toBeInTheDocument();
+    expect(screen.getByText(movie.title)).toBeInTheDocument();
+    expect(screen.getByText(movie.vote_average.toString())).toBeInTheDocument();
     expect(screen.getByText(movie.duration)).toBeInTheDocument();
-    expect(screen.getByText(movie.description)).toBeInTheDocument();
-    expect(screen.getByText(movie.releaseYear.toString())).toBeInTheDocument();
+    expect(screen.getByText(movie.overview)).toBeInTheDocument();
+    expect(screen.getByText(movie.release_date.toString())).toBeInTheDocument();
     expect(screen.getByText(movie.genres.join(", "))).toBeInTheDocument();
   });
 
