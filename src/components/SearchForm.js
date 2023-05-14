@@ -1,31 +1,35 @@
 import React from "react";
-import './SearchForm.css';
+import "./SearchForm.css";
 class SearchForm extends React.Component {
-    constructor(props) {
-      super(props);
-      this.state = {
-        searchQuery: props.initialQuery || "",
-      };
-    }
-  
-    handleInputChange = (event) => {
-      this.setState({ searchQuery: event.target.value });
+  constructor(props) {
+    super(props);
+    this.state = {
+      searchQuery: props.initialQuery || "",
     };
-  
-    handleSearchClick = () => {
+  }
+
+  handleInputChange = (event) => {
+    this.setState({ searchQuery: event.target.value });
+  };
+
+  handleSearchClick = () => {
+    this.props.onSearch(this.state.searchQuery);
+  };
+
+  handleKeyPress = (event) => {
+    if (event.key === "Enter") {
       this.props.onSearch(this.state.searchQuery);
-    };
-  
-    handleKeyPress = (event) => {
-      if (event.key === "Enter") {
-        this.props.onSearch(this.state.searchQuery);
-      }
-    };
-  
-    render() {
-      return React.createElement(
+    }
+  };
+
+  render() {
+    return React.createElement(
+      "div",
+      { className: "myForm" },
+      React.createElement("h1", null, "Find your movie"),
+      React.createElement(
         "div",
-        {className: "searchForm"},
+        { className: "searchForm" },
         React.createElement("input", {
           type: "text",
           className: "searchInput",
@@ -33,10 +37,14 @@ class SearchForm extends React.Component {
           onChange: this.handleInputChange,
           onKeyPress: this.handleKeyPress,
         }),
-        React.createElement("button", { onClick: this.handleSearchClick, className: "searchButton" }, "Search")
-      );
-    }
+        React.createElement(
+          "button",
+          { onClick: this.handleSearchClick, className: "searchButton" },
+          "Search"
+        )
+      )
+    );
   }
+}
 
-  export default SearchForm;
-  
+export default SearchForm;

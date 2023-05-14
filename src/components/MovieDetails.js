@@ -3,24 +3,24 @@ import PropTypes from "prop-types";
 import styles from "./MovieDetails.module.css";
 
 const MovieDetails = ({ movie }) => {
-  const { imageUrl, name, releaseYear, genres, rating, duration, description } =
+  const { poster_path, title, release_date, genres, vote_average, duration, overview } =
     movie;
   const genresString = genres.join(", ");
 
   return (
     <div className={styles.movieInfo}>
-      <img src={imageUrl} alt={name} className={styles.moviePoster} />
+      <img src={poster_path} alt={title} className={styles.moviePoster} />
       <div>
         <div className={styles.movieTitle}>
-          <h2>{name}</h2>
-          <span className={styles.movieRating}>{rating}</span>
+          <h2>{title}</h2>
+          <span className={styles.movieRating}>{vote_average}</span>
         </div>
         <div className={styles.movieGenre}>{genresString}</div>
         <div className={styles.movieDate}>
-            <div>{releaseYear}</div>
+            <div>{release_date}</div>
             <div>{duration}</div>
         </div>
-        <div className={styles.movieDescription}>{description}</div>
+        <div className={styles.movieDescription}>{overview}</div>
       </div>
     </div>
   );
@@ -28,12 +28,12 @@ const MovieDetails = ({ movie }) => {
 
 MovieDetails.propTypes = {
   movie: PropTypes.shape({
-    imageUrl: PropTypes.string.isRequired,
-    name: PropTypes.string.isRequired,
-    rating: PropTypes.number,
+    poster_path: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    vote_average: PropTypes.number,
     duration: PropTypes.string,
-    description: PropTypes.string.isRequired,
-    releaseYear: PropTypes.number.isRequired,
+    overview: PropTypes.string.isRequired,
+    release_date: PropTypes.string.isRequired,
     genres: PropTypes.arrayOf(PropTypes.string).isRequired,
   }).isRequired,
 };

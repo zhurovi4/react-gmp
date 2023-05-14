@@ -7,12 +7,12 @@ export default {
   component: MovieDetails,
   args: {
     movie: {
-      imageUrl: "https://m.media-amazon.com/images/M/MV5BYTE2NDI0ZjgtZmI2Ni00NDI4LTgwZTctN2I3OWIzNjhhYjY1XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_.jpg",
+      poster_path: "https://m.media-amazon.com/images/M/MV5BYTE2NDI0ZjgtZmI2Ni00NDI4LTgwZTctN2I3OWIzNjhhYjY1XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_.jpg",
       name: "Reservoir Dogs",
       rating: 4.5,
       duration: "1h 30m",
       description: "When a simple jewelry heist goes horribly wrong, the surviving criminals begin to suspect that one of them is a police informant.",
-      releaseYear: 1992,
+      release_date: 1992,
       genres: ["Action", "Adventure"],
     },
   },
@@ -36,5 +36,5 @@ export const BigDescription = ({ movie }) => (
 );
 
 export const LongTitle = ({ movie }) => (
-  <MovieDetails movie={{ ...movie, imageUrl: 'https://m.media-amazon.com/images/M/MV5BMTY2NDI2MTc2NV5BMl5BanBnXkFtZTcwNjA2NTQzMw@@._V1_FMjpg_UY2048_.jpg', name: 'The Assassination of Jesse James by the Coward Robert Ford' }} />
+  <MovieDetails movie={{ ...movie, poster_path: 'https://m.media-amazon.com/images/M/MV5BMTY2NDI2MTc2NV5BMl5BanBnXkFtZTcwNjA2NTQzMw@@._V1_FMjpg_UY2048_.jpg', name: 'The Assassination of Jesse James by the Coward Robert Ford' }} />
 );

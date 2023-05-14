@@ -1,29 +1,44 @@
+h1 {
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 500;
+  margin: 0 0 38px 0;
+  padding: 0;
+  text-align: left;
+}
+
+.myForm {
+  margin: 0 155px;
+  flex-grow: 1;
+  position: relative;
+  top: -40px;
+}
+
 .searchForm {
-    display: flex;
-    gap: 12px;
-  }
-  
-  .searchInput {
-    flex-grow: 1;
-    padding: 0 19px;
-    border: none;
-    border-radius: 4px;
-    font-family: "Montserrat", sans-serif;
-    height: 57px;
-    line-height: 57px;
-    font-size: 18px;
-    background: rgba(66, 66, 66, 0.9);
-    color: #fff;
-  }
-  
-  .searchButton {
-    height: 57px;
-    min-width: 233px;
-    border: none;
-    border-radius: 4px;
-    background: #F65261;
-    text-transform: uppercase;
-    color: #fff;
-    font-size: 20px;
-  }
-  
+  display: flex;
+  gap: 12px;
+}
+
+.searchInput {
+  flex-grow: 1;
+  padding: 0 19px;
+  border: none;
+  border-radius: 4px;
+  font-family: "Montserrat", sans-serif;
+  height: 57px;
+  line-height: 57px;
+  font-size: 18px;
+  background: rgba(66, 66, 66, 0.9);
+  color: #fff;
+}
+
+.searchButton {
+  height: 57px;
+  min-width: 233px;
+  border: none;
+  border-radius: 4px;
+  background: #f65261;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 20px;
+}

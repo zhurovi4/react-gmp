@@ -10,12 +10,12 @@ test("renders the MovieForm component correctly", () => {
   expect(releaseDateInput).toBeInTheDocument();
   const movieUrlInput = screen.getByLabelText("Movie URL:");
   expect(movieUrlInput).toBeInTheDocument();
-  const ratingInput = screen.getByLabelText("Rating:");
-  expect(ratingInput).toBeInTheDocument();
+  const vote_averageInput = screen.getByLabelText("Rating:");
+  expect(vote_averageInput).toBeInTheDocument();
   const genreInput = screen.getByLabelText("Genre:");
   expect(genreInput).toBeInTheDocument();
   const runtimeInput = screen.getByLabelText("Runtime:");
   expect(runtimeInput).toBeInTheDocument();
-  const descriptionInput = screen.getByPlaceholderText("Movie description");
-  expect(descriptionInput).toBeInTheDocument();
+  const overviewInput = screen.getByPlaceholderText("Movie overview");
+  expect(overviewInput).toBeInTheDocument();
 });
